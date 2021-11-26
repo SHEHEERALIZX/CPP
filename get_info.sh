@@ -7,7 +7,7 @@
 
 
 
-for ((i = $StartRange ; i <= $EndRange ; i+100)) 
+for ((i = $StartRange ; i <= $EndRange ; i=i+100)) 
 do
 
   curl -k -X POST -d  "username=pkd$i" https://digipay.dtekerala.gov.in/netbank/index.php/student/loadgetname_u >> text.txt
